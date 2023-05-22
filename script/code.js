@@ -53,8 +53,9 @@ document.querySelector('#subtraction')
 })
 
 document.querySelector('#equal')
-.addEventListener('click', ()=>{
-    // console.log(eval(result.value))
+.addEventListener('click', (e)=>{
+    // result.value = eval(result.value).toFixed(2);
+    let calculationResult = eval(result.value)
 
-    result.value = eval(result.value);
+    result.value = calculationResult.toFixed(2);
 })
