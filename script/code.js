@@ -10,6 +10,14 @@ function display(value){
         result.value += value;
         checkerArray.push(value);
     }
+    // let inputArray = result.value.split('');
+    // console.log(inputArray)
+    // if(inputArray[inputArray.length-1] === '.'){
+    //     return;
+    // } else {
+    //     result.value += e.target.innerHTML;
+    //     checkerArray = [];
+    // }
 }
 
 document.querySelector("#backspace").
@@ -30,26 +38,50 @@ document.querySelector('#clear')
 
 document.querySelector('#division')
 .addEventListener('click', (e)=>{
-    result.value += e.target.innerHTML;
-    checkerArray = [];
+    let inputArray = result.value.split('');
+    console.log(inputArray)
+    if(inputArray[inputArray.length-1] === '/'){
+        return;
+    } else {
+        result.value += e.target.innerHTML;
+        checkerArray = [];
+    }
 })
 
 document.querySelector('#multiply')
 .addEventListener('click', (e)=>{
-    result.value += e.target.innerHTML;
-    checkerArray = [];
+    let inputArray = result.value.split('');
+    console.log(inputArray)
+    if(inputArray[inputArray.length-1] === '*'){
+        return;
+    } else {
+        result.value += e.target.innerHTML;
+        checkerArray = [];
+    }
 })
 
 document.querySelector('#addition')
 .addEventListener('click', (e)=>{
-    result.value += e.target.innerHTML;
-    checkerArray = [];
+    let inputArray = result.value.split('');
+    console.log(inputArray)
+    if(inputArray[inputArray.length-1] === '+'){
+        return;
+    } else {
+        result.value += e.target.innerHTML;
+        checkerArray = [];
+    }
 })
 
 document.querySelector('#subtraction')
 .addEventListener('click', (e)=>{
-    result.value += e.target.innerHTML;
-    checkerArray = [];
+    let inputArray = result.value.split('');
+    console.log(inputArray)
+    if(inputArray[inputArray.length-1] === '-'){
+        return;
+    } else {
+        result.value += e.target.innerHTML;
+        checkerArray = [];
+    }
 })
 
 document.querySelector('#equal')
