@@ -12,7 +12,7 @@ function display(value){
     }
     // let inputArray = result.value.split('');
     // console.log(inputArray)
-    // if(inputArray[inputArray.length-1] === '.'){
+    // if(inputArray[inputArray.length-1] === ''){
     //     return;
     // } else {
     //     result.value += e.target.innerHTML;
@@ -29,6 +29,7 @@ addEventListener('click', ()=> {
 
 function clear(){
     result.value = "";
+    checkerArray = [];
 }
 
 document.querySelector('#clear')
