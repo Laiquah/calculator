@@ -1,1 +1,71 @@
+/* styling the calculator heading */
+.h1{
+    font-size: xx-large;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+
+body{
+    background-color: rgb(163, 50, 163);
+    background-image: url(https://i.postimg.cc/fLnHyBYx/pngegg.png);
+    width: auto;
+    height: auto;
+    background-size: cover;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* styling the calculator itself */
+.container{
+    /* background-color: rgb(163, 50, 163); */
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;   
+}
+
+#output{
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+
+}
+
+.holding{
+    border: 3px solid black;
+    width: 15rem;
+    margin: 5rem auto;
+    height: 25rem;
+    padding: 20px;
+    border-radius: 2rem;
+    background-color: lightpink;
+}
+
+.button2{
+    width: fit-content;
+    margin-left: 15px;
+}
+
+button{
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+.button1{
+    display: flex;
+    justify-content: space-around;
+}
+
+button:hover{
+    background-color: blue;
+}
+
+
 
