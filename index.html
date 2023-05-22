@@ -11,11 +11,10 @@
     <div class="container">
       <div class="holding">
         <div class="input">
-          <input type="text" id="output" />
+          <input type="text" id="output" readonly/>
         </div>
         <div class="button1">
-          <button id="clear">AC</button>
-          <button id="remainder">%</button>
+          <button id="clear" onclick="clear()">AC</button>
           <button id="backspace">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -35,19 +34,19 @@
           </button>
         </div>
         <div class="button2" id="numbers">
-          <button onclick="display(0)">0</button>
-          <button onclick="display(1)">1</button>
-          <button onclick="display(2)">2</button>
-          <button class="operators" id="division">/</button>
-          <button onclick="display(3)">3</button>
-          <button onclick="display(4)">4</button>
-          <button onclick="display(5)">5</button>
-          <button class="operators" id="multiply">*</button>
-          <button onclick="display(6)">6</button>
           <button onclick="display(7)">7</button>
           <button onclick="display(8)">8</button>
-          <button class="operators" id="subtraction">-</button>
           <button onclick="display(9)">9</button>
+          <button class="operators" id="division">/</button>
+          <button onclick="display(4)">4</button>
+          <button onclick="display(5)">5</button>
+          <button onclick="display(6)">6</button>
+          <button class="operators" id="multiply">*</button>
+          <button onclick="display(1)">1</button>
+          <button onclick="display(2)">2</button>
+          <button onclick="display(3)">3</button>
+          <button class="operators" id="subtraction">-</button>
+          <button onclick="display(0)">0</button>
           <button onclick="display('.')">.</button>
           <button class="operators" id="addition">+</button>
           <button id="equal">=</button>
